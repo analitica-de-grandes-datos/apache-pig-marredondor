@@ -23,4 +23,4 @@ datos2 = GROUP datos BY letra;
 
 datos3 = FOREACH datos2 GENERATE group, COUNT(datos); 
 
-STORE datos3 INTO 'output/' USING PigStorage('');
+STORE datos3 INTO 'output/' USING PigStorage(',');
